@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">DonePaper</string>
+    <string name="step_one_text">Paper details</string>
+    <string name="step_two_text">Paper complexity</string>
+    <string name="step_three_text">Contact</string>
+    <string name="academicLevel">Academic Level</string>
+    <string name="highschool">Highschool</string>
+    <string name="college">College</string>
+    <string name="university">University</string>
+    <string name="number_of_pages">Number of Pages</string>
+    <string name="double_spaced">Double Spaced</string>
+    <string name="deadline">Deadline</string>
+    <string name="contact_us">Contact us</string>
+    <string name="button_sub">button sub</string>
+    <string name="button_plus">button plus</string>
+    <string name="coupon">Coupon</string>
+    <string name="enter_your_coupon">Enter your coupon</string>
+    <string name="apply">Apply</string>
+    <string name="text_sub">_</string>
+    <string name="text_plus">+</string>
+    <string name="total">Total :</string>
+    <string name="continue_text">Continue</string>
+    <string name="your_infomation">Your Information</string>
+    <string name="returning_customer">Returning Customer</string>
+    <string name="new_customer">New Customer</string>
+    <string name="sign_in">Sign in</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="place_order">Place Order</string>
+    <string name="your_name">Your Name <font fgcolor="red">*</font></string>
+    <string name="enter_your_name_here">Enter your name here</string>
+    <string name="your_email">Your Email <font fgcolor="red">*</font></string>
+    <string name="enter_your_email_here">Enter your email here</string>
+    <string name="your_password">Your Password <font fgcolor="red">*</font></string>
+    <string name="enter_your_password_here">Enter your password here</string>
+    <string name="confirm_password">Confirm Password <font fgcolor="red">*</font></string>
+    <string name="enter_your_password_again">Enter your password again</string>
+    <string name="service_type">Service Type</string>
+    <string name="writing">Writing</string>
+    <string name="revising">Revising</string>
+    <string name="paper_type">Paper Type</string>
+    <string name="paper_subject">Paper Subject</string>
+    <string name="paper_name">Paper Name <font fgcolor="red">*</font></string>
+    <string name="paper_name_hint">Title of your paper</string>
+    <string name="citation_style">Citation Style</string>
+    <string name="paper_instructions">Paper Instructions</string>
+    <string name="paper_instructions_hint">Additional instructions of your paper</string>
+    <string name="upload_file">Upload File</string>
+    <string name="attach_your_file">Attach your file</string>
+    <string name="terms_of_service">By placing an order with us, you agree to our <a style="color:#1e9e6b" href="#"><font fgcolor="#1e9e6b">Terms of Service</font></a></string>
+    <string name="name">Paper Name</string>
+    <string name="email">Email</string>
+    <string name="choose_another_account">Choose another account?</string>
+    <string name="login">Login</string>
+    <string name="order_paper">Order Paper</string>
+    <string name="close_activity">close activity</string>
+    <string name="logo_done_paper">logo done paper</string>
+    <string name="email_allcap">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="forgot_password_reset"><font fgcolor="#1e9e6b">Forgot Password? </font><b><font fgcolor="#1e9e6b">Reset</font></b></string>
+    <string name="don_t_have_an_account_sign_up">DON\'T HAVE AN ACCOUNT? <b>SIGN UP.</b></string>
+    <string name="paper_revising_and_writing_service">Paper revising and writing service</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_sign_in">ALREADY HAVE AN ACCOUNT? <b>SIGN IN.</b></string>
+    <string name="name_allcap">NAME</string>
+    <string name="order_preview">Order Preview</string>
+    <string name="pay_with_paypal">Pay with PayPal</string>
+    <string name="order_number">Order Number</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="subject">Subject</string>
+    <string name="type">Type</string>
+    <string name="instructions">Paper Instructions</string>
+    <string name="pages">Pages</string>
+    <string name="spacing">Spacing</string>
+    <string name="price">Price</string>
+    <string name="revision_left">Revision Left</string>
+    <string name="subject_allcaps">SUBJECT</string>
+    <string name="message">MESSAGE</string>
+    <string name="send_message">Send Message</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="user_name">NAME</string>
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="attachment">Attachment</string>
+    <string name="create_order">Create Order</string>
+    <string name="title_user_profile">User Profile</string>
+    <string name="action_save">Save</string>
+    <string name="title_terms_of_service">Terms of Service</string>
+    <string name="notification">notification</string>
+    <string name="chat">Messages</string>
+    <string name="send">Send</string>
+    <string name="search">search</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="order_detail">Order Detail</string>
+    <string name="icon_tick">icon tick</string>
+    <string name="delete_attachment">delete attachment</string>
+    <string name="title">Title</string>
+    <string name="icon_recent">icon recent</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="single_page">Single Page</string>
+    <string name="double_page">Double Page</string>
+    <string name="main_all_text">All</string>
+    <string name="order_detail_preview">Order Preview</string>
+    <string name="ok">ok</string>
+    <string name="article">News/Article</string>
+    <string name="article_list">Article List</string>
+    <string name="library">Library</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- -->
+</resources>

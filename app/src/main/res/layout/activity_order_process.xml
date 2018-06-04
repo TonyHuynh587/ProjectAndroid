@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skylab.donepaper.donepaper.activities.OrderProcessActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/order_process_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/order_process_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_order"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.skylab.donepaper.donepaper.view.StepsProgressBar
+        android:id="@+id/steps_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_process_toolbar">
+
+    </com.skylab.donepaper.donepaper.view.StepsProgressBar>
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/steps_progress_bar">
+
+    </FrameLayout>
+
+</RelativeLayout>

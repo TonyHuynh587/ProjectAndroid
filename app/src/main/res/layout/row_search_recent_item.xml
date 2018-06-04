@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/search_preffix_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="start"
+        android:contentDescription="@string/icon_recent"
+        app:srcCompat="@drawable/ic_history" />
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/search_preffix_image"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/search_text_on"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="start"
+        android:contentDescription="@string/icon_recent"
+        app:srcCompat="@drawable/ic_arrow_up_left" />
+</RelativeLayout>

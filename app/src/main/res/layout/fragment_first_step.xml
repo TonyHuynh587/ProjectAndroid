@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/form_step_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/continue_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/service_type" />
+
+            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/service_type_segmented_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                segmentedgroup:sc_border_width="2dp"
+                segmentedgroup:sc_corner_radius="4dp"
+                segmentedgroup:sc_tint_color="@color/colorAccent">
+
+                <RadioButton
+                    android:id="@+id/writing_type"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/writing" />
+
+                <RadioButton
+                    android:id="@+id/revising_type"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/revising" />
+
+            </info.hoang8f.android.segmented.SegmentedGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/paper_type" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/paper_type"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:drawableEnd="@drawable/ic_tick"
+                android:paddingEnd="36dp"
+                android:paddingStart="20dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/paper_subject" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/paper_subject"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:drawableEnd="@drawable/ic_tick"
+                android:paddingEnd="36dp"
+                android:paddingStart="20dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/paper_name" />
+
+            <EditText
+                android:id="@+id/paper_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:hint="@string/paper_name_hint"
+                android:inputType="textCapSentences"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/citation_style" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/paper_citation"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:drawableEnd="@drawable/ic_tick"
+                android:paddingEnd="36dp"
+                android:paddingStart="20dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/paper_instructions" />
+
+            <EditText
+                android:id="@+id/paper_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:hint="@string/paper_instructions_hint"
+                android:inputType="textMultiLine"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/upload_file" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/paper_upload"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="330dp"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="20dp"
+                    android:drawableStart="@drawable/ic_upload"
+                    android:ellipsize="end"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/attach_your_file"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <ImageButton
+                    android:id="@+id/attachment_close_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_close"
+                    android:contentDescription="@string/delete_attachment"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@id/continue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/continue_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/continue_text"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</RelativeLayout>

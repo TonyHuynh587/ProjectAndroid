@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#1e9e6b</color>
+    <color name="colorTint">#e2e2e2</color>
+    <color name="colorTextTint">#9b9b9b</color>
+    <color name="buttonDivider">#f8f8f8</color>
+    <color name="colorHeader">#f8f8f8</color>
+    <color name="colorNameHeader">#9b9b9b</color>
+    <color name="statusDelivered">#1e9e6b</color>
+    <color name="statusUnpaid">#f33535</color>
+    <color name="statusDefault">#3F3F42</color>
+    <color name="profileHeaderInput">#8e8e92</color>
+    <color name="statusBlue">#3A71F9</color>
+</resources>

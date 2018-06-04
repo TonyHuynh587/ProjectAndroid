@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/type_member_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorHeader"
+        android:gravity="center_vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/your_infomation"
+        android:textColor="@color/colorNameHeader"
+        android:textSize="14sp" />
+
+    <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/type_member_segmented_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_member_header"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="2dp"
+        segmentedgroup:sc_corner_radius="4dp"
+        segmentedgroup:sc_tint_color="@color/colorAccent">
+
+        <RadioButton
+            android:id="@+id/return_customer"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/returning_customer" />
+
+        <RadioButton
+            android:id="@+id/new_customer"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/new_customer" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/return_customer_layout"
+        android:background="@color/colorHeader" />
+
+    <LinearLayout
+        android:id="@+id/return_customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_member_segmented_button"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sign_in_header"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorHeader"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorNameHeader"
+            android:textSize="14sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/email_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_your_email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/return_pass_input_layout"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/pass_input_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_your_password"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgot_pass_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/terms_of_service_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorHeader"
+            android:paddingTop="20dp"
+            android:text="@string/terms_of_service"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_member_segmented_button"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/new_customer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/name_header"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/your_name"
+                android:textColor="@color/colorNameHeader"
+                android:textSize="14sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/name_input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_your_name_here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/email_header"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/your_email"
+                android:textColor="@color/colorNameHeader"
+                android:textSize="14sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/new_email_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/new_email_input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_your_email_here"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/new_pass_header"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/your_password"
+                android:textColor="@color/colorNameHeader"
+                android:textSize="14sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/new_pass_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/new_pass_input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_your_password_here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/confirm_pass_header"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/confirm_password"
+                android:textColor="@color/colorNameHeader"
+                android:textSize="14sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/confirm_pass_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/confirm_pass_input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_your_password_again" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/new_terms_of_service_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/colorHeader"
+                android:paddingTop="20dp"
+                android:text="@string/terms_of_service"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_above="@id/continue_layout">
+
+        <TextView
+            android:id="@+id/total_text_step3_not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="96dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="@string/total"/>
+
+        <TextView
+            android:id="@+id/total_price_step3_not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@id/continue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/place_order_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/place_order"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</RelativeLayout>

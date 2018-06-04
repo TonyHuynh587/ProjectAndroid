@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="34dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end">
+
+    <!-- Menu Item Image -->
+    <ImageView
+        android:id="@+id/image_view_chat"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/notification"
+        app:srcCompat="@drawable/ic_speech_bubble" />
+
+    <!-- Badge Count -->
+    <TextView
+        android:id="@+id/toolbar_chat_notifcation_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/badge_circle"
+        android:padding="1dp"
+        android:text="99"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

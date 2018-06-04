@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skylab.donepaper.donepaper.activities.ForgotPassActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/forgot_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ProfileActivityToolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/forgot_password"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:scrollbars="none"
+        android:id="@+id/forgot_pass_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/forgot_activity_toolbar"/>
+
+</RelativeLayout>

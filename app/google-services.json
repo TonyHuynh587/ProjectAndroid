@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "243854015397",
+    "firebase_url": "https://donepaper-aa7da.firebaseio.com",
+    "project_id": "donepaper-aa7da",
+    "storage_bucket": "donepaper-aa7da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243854015397:android:a66961b259fc4218",
+        "android_client_info": {
+          "package_name": "com.skylab.donepaper.donepaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243854015397-4adf63arhb047uebkokj48sjtm3nmh6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skylab.donepaper.donepaper",
+            "certificate_hash": "16e5968c3a6ed13b3767053d5e2ec5e4913e8df9"
+          }
+        },
+        {
+          "client_id": "243854015397-2pa7k29ecas46i886vpdfhvng8ocfrsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6xnHFBWSkVfU-EcSSjeqMXhNK9BdpHVE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243854015397-2pa7k29ecas46i886vpdfhvng8ocfrsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
